@@ -9,11 +9,11 @@
 </head>
 <body class="container-fluid container-lg" style="color: white;">
 
-    <div class="row bg-warning"  name="top-bar">
+    <div class="row top-bar">
 
-        <div class="col-3">
-            <div class="movil-nav-icon" style="display: none;">
-                Icon
+        <div class="col-1 col-lg-3">
+            <div>
+                <img src="/resources/menu icon.png" class="movil-nav-icon" style="width: 20px;">
             </div>
             <div class="browser-nav-bar">
                 <a href="index.html">Inicio</a> |
@@ -23,22 +23,26 @@
             </div>  
         </div>
 
-        <div class="col-7">
-            <form action="">
-                <input type="text" style="border-radius: 15px; width: 80%;">
+        <div class="col-9 col-lg-8" >
+            <form id="search-bar">
+                <input type="text" class="searchbox">
+                <img src="/resources/search icon.png" style="width: 20px;">
             </form>
         </div>
-        <div class="col-2">
-            login
+        <div class="col-1">
+            <button>Login</button>
         </div>
     </div> <br>
 
     <div class="row">
-        <div class="col-9">
+        <div class="col-12 col-lg-9">
             <h1 class="text-centered border">Banner</h1>
         </div>
-        <div class="col-3">
-            <div class="row">
+        <div class="col-1 col-lg-3" id="music-bar">
+            <div style="background-color:violet;">
+                <img src="/resources/music icon.png" class="movil-nav-icon" >
+            </div>
+            <div class="row browser-nav-bar">
                 <div class="col-12">
                     <img src="resources/covers.png" style="width:250px;" alt="">
                 </div>
@@ -49,24 +53,24 @@
                     <button name="btn-player">></button>
                 </div>
                 <div class="col-6">
-                    <button>o<|</button> -------
+                    <button>o<|</button> ---
                 </div>
             </div>
         </div>
-    </div>
+    </div><br>
 
     <div class="row">
-        <div class="col-9">
+        <div class="col-12 col-lg-9">
 
             <div class="row post" name="post">
                 
-                <div class="col-9 border" style="padding-top: 5px;">
+                <div class="col12 col-lg-9" style="padding-top: 5px;">
                     <div class="row">
-                        <div class="col-3">
+                        <div class="col-12 col-lg-3">
                             <img src="resources/game covers/FearTapes gameshow.png" style="width: 100%;"   alt="">
                             <p>creado por @usuario</p>
                         </div>
-                        <div class="col-9">
+                        <div class="col-12 col-lg-9">
                             <div class="row">
                                 <div class="col-12" style="display: flex; justify-content: space-between;">
                                     <h6> <a href="post-sample.html">FearTapes: Game Show</a></h6>
@@ -78,7 +82,7 @@
                     </div>
                 </div>
 
-                <div class="col-3 border">
+                <div class="col-12 col-lg-3 border">
                     <div class="row" style="height: 75%">
                         <div class="col-9">
                             <div style="display: inline-block;"> estrellas:4.5</div>
@@ -95,7 +99,7 @@
             </div><br>
 
         </div>
-        <div class="col-3" id="latest-post-bar">
+        <div class="col-12 col-lg-3" id="latest-post-bar">
             <div class="row latest-post">
                 <div class="col-4" style="height: 75px;">
                      <img src="https://static1.e621.net/data/preview/74/f1/74f146c90d0a1197cba5cd9de3e61f1b.jpg" alt="" name="lat-post-img">

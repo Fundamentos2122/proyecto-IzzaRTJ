@@ -1,14 +1,28 @@
 
 @media (min-width: 0px) {
     .movil-nav-icon{
+        width: 35px;
         display: inline;
     }
     .browser-nav-bar{
         display: none;
     }
     .post-description{
+        font-size: large;
         display: none;
     }
+    .searchbox{
+        width: 90%;
+        border-radius: 15px;
+    }
+    #music-bar{
+        position: fixed;
+        top: 25px;
+        right: 0;
+        z-index: 5;
+
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -16,10 +30,21 @@
         display: none;
     }
     .browser-nav-bar{
-        display: inline;
+        display: inline-block;
     }
     .post-description{
+        font-size: smaller;
         display: inline-block;
+    }
+    .searchbox{
+        width: 80%;
+        border-radius: 15px;
+    }
+    #music-bar{
+        position: inherit;
+    }
+    .post{
+        margin-right: 5px;
     }
 }
 
@@ -34,7 +59,7 @@
 }
 
 .latest-post, .post, .popular-post{
-    width: 100%;
+    padding: 1em 0.1em;
     border: white 2px solid;
     border-radius: 5px;
     background-color: var(--post-color);
@@ -65,6 +90,24 @@
     padding: 0px;
 }
 
-#top-bar{
+.top-bar{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    background-color: rgb(185, 80, 80);
+}
 
+.movil-nav-icon:hover{
+    background-color: darkgray;
+}
+
+
+
+img[name="miniature"]{
+
+}
+
+.subtitle{
+    font-size: medium;
+    text-align: center;
 }
