@@ -22,7 +22,24 @@
         z-index: 5;
 
     }
-
+    .mobil-dissapear{
+        display: none;
+    }
+    .login-camp{
+        border-radius: 0px;
+        border: 0px;
+        max-width: 100%;
+    }
+    .movilpadding{
+        padding-left:0px ;
+        padding-right: 0px;
+    }
+    #latest-posts{
+        font-size: large;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+ 
 }
 
 @media (min-width: 992px) {
@@ -46,32 +63,56 @@
     .post{
         margin-right: 5px;
     }
+    #latest-post-bar{
+        border-left:2px solid var(--color-light-darked) ;
+        padding-left: 30px;
+    }
+    .mobil-dissapear{
+        display: block;
+    }
+    .login-camp{
+        padding: 15px 5px;
+        border-radius: 10px;
+        border:2px;
+        border:solid;
+        border-color: rgb(73, 60, 104);
+        max-width: 680px;
+    }
+    #latest-posts{
+        font-size: large;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+.login-camp{
+    padding: 15px 5px;
+    background-color: slategrey;
 }
 
-#latest-post-bar{
-    border-left:2px solid var(--color-light-darked) ;
 
-}
 
-.latest-post{
-    padding: 5px 0px;
-    margin-left: 0px;
-}
 
 .latest-post, .post, .popular-post{
-    padding: 1em 0.1em;
+    padding: 1em 0em;
     border: white 2px solid;
     border-radius: 5px;
     background-color: var(--post-color);
 }
 .centered{
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center ;
+}
+.separated{
+    display: flex;
+    justify-content: space-between;
 }
 
 .latest-post:hover{
     background-color: blanchedalmond;
     color: black;
+    cursor:pointer;
 }
 
 .gallery-item:hover{
@@ -101,13 +142,140 @@
     background-color: darkgray;
 }
 
-
-
-img[name="miniature"]{
-
+.movil-top-bar{
+    position: fixed;
+    top: 25px;
+    left: 0px;
 }
 
 .subtitle{
-    font-size: medium;
+    font-size: larger;
     text-align: center;
+    padding: 1em 0em;
+    background-color: rgba(75, 50, 50, 0.5);
+}
+
+*[name="member"]{
+    display: none;
+}
+
+
+#bottom-page{
+    background-color: black; 
+    border-top: solid 2px white; 
+    width: 100%;
+    height: 100px;
+
+    bottom: 0px;
+    left: 0px;
+}
+
+#principal-cont{
+    min-height:55vh;
+}
+
+.loginobject{
+    display: none;
+}
+
+#commentarybox{
+    background-color: goldenrod;
+    border-radius: 5px;
+    text-align: center;
+    font-size: larger;
+    font-weight: 700;
+    color: white;
+}
+#userbox{
+    align-content: center;
+    text-align: center;
+}
+.posting-icon{
+    width: 100px;
+    height: auto;
+    display: block;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+.nav-menu{
+    background-color: rgba(233, 218, 199, 0.8);
+    padding: 0px 4px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 1200;
+}
+.nav-menu > button{
+    background-color: rgb(146, 123, 92);
+    margin: 4px 0px;
+}
+.bagmenu{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(20, 20, 20,0.7);
+    width: 100%;
+    height: 100%;
+    z-index: -4;
+}
+.centerpage{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.wordbtn{
+    color: slateblue;
+    font-style: italic;
+    text-decoration: underline;
+}
+.wordbtn:hover{
+    color: turquoise;
+}
+#succes-login{
+    background-color: var(--color-success-clear);
+}
+.warningmsg{
+    background-color: rgb(228, 128, 111);
+    border:rgb(185, 80, 80) 2px  solid;
+    border-radius: 5px;
+    padding: 15px 0px;
+}
+.banner-img{
+    width: 100%;
+}
+.tag-item{
+    font-size: larger;
+    color:forestgreen ;
+    text-decoration: underline;
+}
+
+.wraped{
+    display: wrap;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#game-cover{
+    width:100%;
+}
+
+.post-bottom{
+    border-bottom: 2px solid white; 
+    margin: 10px 0px;
+}
+
+.link-title{
+    color: indigo;
+    text-decoration: underline;
+}
+.link-title:hover{
+    cursor: pointer;
 }

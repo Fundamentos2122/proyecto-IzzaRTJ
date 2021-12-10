@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/framework.css">
+    <title>Document</title>
+</head>
+<body class="container-fluid container-lg" style="color: white;">
+
+    <div id="navspace"> </div>
+
+    <div id="bannerspace"> </div> <br>
+    
+    <div class="border-bottom"></div> <br>
+
+    <div class="row post">
+
+        <div class="col-12" id="actual-post">
+            <div class="row">
+                <div class="col-12">
+                    <img id="game-cover" src="resources/game covers/FearTapes gameshow.png" style="width: 100%;" alt="">
+                </div>
+                <div class="col-12"><h3 id="game-title"class="centered">Titulo  del juego</h3><br></div>
+                
+                <div class="col-6 col-lg-3" style=" align-content: center;">
+                    <img id="userimg" src="resources/user-sample.gif" style="width: 100%;">
+                    <h6 id="username">usuario que creo el post</h6>
+                </div>
+                <div class="col-6">
+                    
+                    <p >Plataformas:<span id="game-plataforms"></span></p>
+                    <p id="game-genre">Genero</p>
+                    
+                    <p id="game-score">Calificacion : 4.5</p>
+                    <p id="game-tags" style="text-decoration: none;"><a href="">suspenso</a>
+                        <a href="">corto</a>
+                        <a href="">psx</a>
+                        <a href="">ingles</a>
+                        <a href="">Desiciones</a>
+                    </p>
+                </div>
+            </div>
+            <div class="row" >
+                
+                <div class="col-12 col-lg-10">
+                    <p id="game-description">
+                        un juego algo lento pero cumple su cometido, los controles son sencillos como cualquier otro juego similar,  la historia
+                        es algo intrigante. un punto malo es tener que esperar a que el narrador termine de habalr antes de tomar cualquier desicicon
+                        como es un juego hecho en poco tiempo es posible estancarse en algun momento del juego teniendo que reiniciar todo de nuevo. fuera
+                        de esos detalles me parece buen juego.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12" id="game-screens">
+
+            </div>
+        </div>
+
+
+    </div>
+    <br>
+    <div id="commentary-list"> </div>
+
+
+    <br>
+
+    <div class="row post hide " user-rank="nouser" name="loginobject">
+        <div class="col-12 col-lg-3 text-centered">
+            <img src="resources/X icon.png" style="width: 128px;">
+        </div>
+        <div class="col-12 col-lg-9 ">
+            <div class="row">
+                <div class="col-12">
+                    <h4>Ingresa o crea una cuenta para poder comentar</h4>
+                    <p>Debes ser miembro de la comunidad para poder comentar</p>
+                </div>
+                <div class="col-6" >
+                    <div style="padding: 5px;background-color: rgba(240, 225, 143, 0.527); border-radius: 5px;">
+                        Ingresa o crea una cuenta <br>
+                        <button>Ingresar</button>
+                    </div>    
+                </div>    
+            </div>
+        </div>
+    </div>
+
+    <div class="row hide" user-rank="user" name="loginobject" style="padding: 5px;" >
+        <div class="col-12" id="commentarybox" >escribe un comentario</div> <br>
+
+        <div class="col-12 col-lg-2" id="userbox">
+            <img id="userbox-img" class="mobil-dissapear" src="resources/user-sample.gif" width="100%" > </img>
+            <p id="userbox-username" class="user-name">Nombre de usuario</p>
+        </div>
+        
+        <div class="col-12 col-lg-10" >
+            <form action="" name="commentform">
+                <textarea name="text-comment" type="text" rows="15  " style="width: 100%;background-color: rgb(186, 196, 207);" > </textarea>
+                <input type="submit" value="comentar">
+            </form>
+        </div>
+    </div>
+    
+    <img src="https://img.freepik.com/free-vector/dark-hexagonal-background-with-gradient-color_79603-1410.jpg?size=626&ext=jpg" alt="" class="bg-img">
+
+    <div id="bottom-page"> </div>
+    
+    <script src="js/default_items.js"></script>
+    <script src="js/loadpost.js"></script>
+        
+</body>
+</html>

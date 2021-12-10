@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/framework.css">
+    <title>Login</title>
+</head>
+<body class="container-fluid container-lg" style="color: white; padding: 0em;">
+    <div class="row login-camp" style=" margin: auto;">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-12 col-lg-3">
+                    <img src="resources/X icon.png" style="width: 150px;">
+                </div>
+
+                <div class="border-bottom"> </div>
+
+                <div class="col-12 col-lg-9 show" id="login-div">
+                    <div style="display: block;">
+                        <h2>Iniciar sesion</h2>
+                    </div>
+                    <form action="index.html" id="login" name="login-form" autocomplete="off" >                        
+                        <label for="username">Usuario</label>
+                        <input type="text" name="username" required="true">
+                        <br>
+                        <label for="password"> Contrasena</label>
+                        <input type="password" name="password" required="true">
+                        <br>
+                        <div style="display: flex; justify-content: flex-end;">
+                            <input type="submit" value="Entrar" id="tologin">
+                            <input type="button" value="Regresar" name="backbutton" onclick="location.href='index.html'">
+                        </div>
+                        
+                    </form>
+                    <br>
+                    <div class="border-top">
+                        No tienes cuenta? <span class="wordbtn" name="logregoption" data-target="register-div" data-toggle="div">Registrate</span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-9 hide" id="register-div">
+                    <form id="regis" name="regis-form" autocomplete="off">
+                        <label for="regusername">Elige nombre de usuario</label> <br>
+                        <input type="text" name="regusername" required="true">
+                        <br>
+                        <div id="passworddiv" class="">
+                            <p class="hide text-centered" id="wmsg">Las contraseñas no coinciden</p>
+                            <label for="password"> Contraseña</label><br>
+                            <input type="password" name="passwordA" required="true">
+                            <br>
+                            <label for="password"> Confirma tu constraseña</label><br>
+                            <input type="password" name="passwordB" required="true">                        
+                        </div>
+                        <label for="mail">ingresa tu correo</label><br>
+                        <input type="text" name="mail" required="true"> <br>
+                        <label for="pimage">elige una imagen de perfil</label><br>
+                        <input type="text" name="pimage" required="true">
+                        <br>
+                        <div style="display: flex; justify-content: flex-end;">
+                            <input type="submit" value="Registrar" id="toregis">
+                            <input type="button" value="Regresar" name="backbutton" onclick="location.href='index.html'">
+                        </div>
+                        
+                    </form>
+                    <div class="border-top">
+                        Ya tienes cuenta? <span class="wordbtn" name="logregoption"  data-target="login-div" data-toggle="div">Ingresar</span>
+                    </div>
+                </div>
+
+                
+
+            </div>
+            
+        </div>
+        <div id="succes-div" class="centered hide" >
+            <img src="resources/succes-icon.png" alt="" class="gallery-item">
+            <h5>Te has registrado, confirma tu correo electronico para terminar el registro</h5>
+        </div>
+    </div>
+    <script src="JS/login.js"></script>
+    
+    <img src="https://img.freepik.com/free-vector/dark-hexagonal-background-with-gradient-color_79603-1410.jpg?size=626&ext=jpg" alt="" class="bg-img">
+
+</body>
+</html>

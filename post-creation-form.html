@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/framework.css">
+    <title>Document</title>
+</head>
+<body class="container-fluid container-lg" style="color: white;">
+
+    <div id="navspace"> </div>
+
+    <div id="bannerspace"> </div> <br>
+
+    <div class="border-bottom"></div> <br>
+
+    <div class="row" style="background-color: rgba(212, 183, 145,0.3); padding: 10px;">
+        <!-- parte de creador de contenido-->
+        <div class="col-12 col-lg-10 ">
+                <form action="post-creation-send.html" name="postingform" autocomplete="off">
+                    <div class="row">
+                        <!--parte del perfil y los titulos-->
+                        <div class="col-12 col-lg-10">
+                            <div class="row">
+                                <div class="col-12 centered">
+                                    <img id="game-cover" src="" alt="" width="auto"> 
+                                    <label for="imgurl">URL de la imagen de portada</label>
+                                    <input type="text" id="imgurl" name="imgurl" style="width: 100%;">
+                                </div>
+                                <br>
+                                
+                                <div class="col-12">
+                                    <br>
+                                    <div class="separated">
+                                        <label for="title">Titulo</label>
+                                        <input type="text" name="title" style="width: 70%;">
+                                    </div>
+                                    <div class="separated">
+                                        <label for="gametitle">Titulo del juego</label>
+                                        <input type="text" name="gametitle" required="true" style="width: 70%;">
+                                    </div>
+                                    <div class="separated">
+                                        <label for="tags">tags</label>
+                                        <input id="tags" type="text" name="tags" readonly style="background-color: rgb(177, 177, 177); width: 70%">
+                                    </div>
+                                </div>
+                                <!-- parte de la descripcion-->
+                                <div class="col-12">
+                                    <h3>Descripcion</h3>
+
+                                    <textarea class="FormElement" name="description" id="term" cols="40" rows="15" style="width: 100%; background-color: rgb(186, 196, 207)" required="true"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <!---parte de subir archivos-->
+                        <div class="col-12 col-lg-2 wraped">
+                            <div class="centered"style="display: inline-block;">
+                                <img src="resources/img icon color.png" alt="" class="posting-icon">
+                                <button>Subir imagenes</button>
+                                <label for="spoilerimg">spoiler</label>
+                                <input type="checkbox" name="spoilerimg" id="">
+                            </div>
+                            <div class="centered" style="display: inline-block;">
+                                <img src="resources/music icon.png" alt="" class="posting-icon">
+                                <button>Subir video</button>
+                                <label for="spoilerimg">spoiler</label>
+                                <input type="checkbox" name="spoilerimg" id="">
+                            </div> <br>
+                            <div style="display: inline-block;"> <h5>Plataformas</h5>
+                                <div>
+                                    <img class="platform-icon" src="" alt="">
+                                    <label for="PC">PC</label>
+                                    <input optionchkbox="platfomr" type="checkbox" name="PC">
+                                </div>
+                                <div>
+                                    <img class="platform-icon" src="" alt="">
+                                    <label for="XBOX">XBOX</label>
+                                    <input optionchkbox="platfomr" type="checkbox" name="XBOX">
+                                </div>
+                                <div>
+                                    <img class="platform-icon" src="" alt="">
+                                    <label for="PS">PS</label>
+                                    <input optionchkbox="platfomr" type="checkbox" name="PS">
+                                </div>
+                                <div>
+                                    <img class="platform-icon" src="" alt="">
+                                    <label for="Nintendo">Nintendo</label>
+                                    <input optionchkbox="platfomr" type="checkbox" name="Nintendo">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <input type="submit" name="" id="" value="Crear" class="btn-success">
+                </form>   
+        </div>
+
+        <!-- parte de los tags-->
+        
+        <div id="clasdiv" class="col-12 col-lg-2 border-left"> Etiquetas: </div>
+        
+    </div>
+    <br><br>
+    <img src="https://img.freepik.com/free-vector/dark-hexagonal-background-with-gradient-color_79603-1410.jpg?size=626&ext=jpg" alt="" class="bg-img">
+
+    <div id="bottom-page"> </div>
+    
+    <script src="JS/default_items.js"></script>
+    <script src="JS/creationpost.js"></script>
+        
+</body>
+</html>

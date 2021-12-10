@@ -9,65 +9,23 @@
 </head>
 <body class="container-fluid container-lg" style="color: white;">
 
-    <div class="row top-bar">
+    <div id="navspace"> </div> <br>
 
-        <div class="col-1 col-lg-3">
-            <div>
-                <img src="/resources/menu icon.png" class="movil-nav-icon" style="width: 20px;">
-            </div>
-            <div class="browser-nav-bar">
-                <a href="index.html">Inicio</a> |
-                <a href="posts.html">Post</a> |
-                <a href="gallery.html">Galeria</a> |
-                <a href="faqs.html">FAQ's</a>
-            </div>  
-        </div>
-
-        <div class="col-9 col-lg-8" >
-            <form id="search-bar">
-                <input type="text" class="searchbox">
-                <img src="/resources/search icon.png" style="width: 20px;">
-            </form>
-        </div>
-        <div class="col-1">
-            <button>Login</button>
-        </div>
-    </div> <br>
-
-    <div class="row">
-        <div class="col-12 col-lg-9">
-            <h1 class="text-centered border">Banner</h1>
-        </div>
-        <div class="col-1 col-lg-3" id="music-bar">
-            <div style="background-color:violet;">
-                <img src="/resources/music icon.png" class="movil-nav-icon" >
-            </div>
-            <div class="row browser-nav-bar">
-                <div class="col-12">
-                    <img src="resources/covers.png" style="width:250px;" alt="">
-                </div>
-                <br>
-                <div class="col-6">
-                    <button name="btn-player"><</button>
-                    <button name="btn-player">P</button>
-                    <button name="btn-player">></button>
-                </div>
-                <div class="col-6">
-                    <button>o<|</button> ---
-                </div>
-            </div>
-        </div>
-    </div><br>
+    <div id="bannerspace"> </div> <br>
+    
+    <div class="border-bottom"></div> <br>
 
     <div class="row post">
 
         <div class="col-12">
             <div class="row">
                 <div class="col-3">
-                    <img src="resources/game covers/FearTapes gameshow.png" style="width: 100%;" alt="">
+                    <img id="Game-Cover" src="resources/game covers/FearTapes gameshow.png" style="width: 100%;" alt="">
                 </div>
                 <div class="col-9">
-                    <h5>Fear  Tapes: Game Show</h5><p>Plataformas:PC       genero: busqueda/survival</p>
+                    <h5 id="Game-title">Fear  Tapes: Game Show</h5>
+                    <p >Plataformas:<span id="Game-plataforms"></span></p>
+                    <p id="Game-genre">Genero</p>
                     
                     <p>Calificacion : 4.5</p>
                     <p style="text-decoration: none;"><a href="">suspenso</a>
@@ -119,7 +77,7 @@
 
     <br>
 
-    <div class="row post">
+    <div class="row post " user-rank="nologed" name="loginobject">
         <div class="col-12 col-lg-3 text-centered">
             <img src="resources/X icon.png" style="width: 128px;">
         </div>
@@ -145,10 +103,31 @@
     
             </div>
         </div>
-
     </div>
+
+    <div class="row" user-rank="user" name="loginobject" style="padding: 5px;" >
+        <div class="col-12" id="commentarybox" >escribe un comentario</div>
+        <div class="col-12 col-lg-2" id="userbox">
+            <img class="userbox-userimg mobil-dissapear" src="resources/user-sample.gif" width="100%" > </img>
+            <p class="userbox-username">Nombre de usuario</p>
+        </div>
+        <div class="col-12 col-lg-10" >
+            <form action="" name="commentform">
+                <input type="text" style="width: 100%; height: 300px; display: block; background-color: rgb(186, 196, 207);" >
+                <input type="button" value="Subir Imagen">
+                <input type="button" value="Subir Imagen">
+                <label for="spoiletcb">Spoiler</label>
+                <input type="checkbox" name="spoilercb">
+                <input type="submit" value="comentar">
+            </form>
+        </div>
+    </div>
+    
     <img src="https://img.freepik.com/free-vector/dark-hexagonal-background-with-gradient-color_79603-1410.jpg?size=626&ext=jpg" alt="" class="bg-img">
 
-    <div id="bottom-page" style="background-color: black; border-top: solid 2px white; width: 100%; height: 300px;"></div>
+    <div id="bottom-page"> </div>
+    
+    <script src="js/default_items.js"></script>
+        
 </body>
 </html>

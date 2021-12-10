@@ -46,6 +46,10 @@
     border-bottom: 1px solid var(--border-color);
 }
 
+.border-left {
+    border-left: 1px solid var(--border-color);
+}
+
 . {
     border-left: 1px solid var(--border-color);
 }
